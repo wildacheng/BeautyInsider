@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lvh-J5-ffg">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,207 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Beauty_Insider" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SILK-homePage" translatesAutoresizingMaskIntoConstraints="NO" id="VhJ-CV-HvR">
+                                <rect key="frame" x="0.0" y="461" width="375" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfJ-8c-bUx">
+                                <rect key="frame" x="151" y="527" width="72" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Brands">
+                                        <attributes>
+                                            <color key="NSColor" red="0.34509803921568627" green="0.25490196078431371" blue="0.32549019607843138" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="25" name="Baskerville"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MAKEUP-homePage" translatesAutoresizingMaskIntoConstraints="NO" id="aII-4h-Cpm">
+                                <rect key="frame" x="0.0" y="629" width="375" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kll-Yw-I1s">
+                                <rect key="frame" x="144" y="695" width="86" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Makeup">
+                                        <attributes>
+                                            <color key="NSColor" red="0.34509803921568627" green="0.25490196078431371" blue="0.32549019607843138" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="25" name="Baskerville"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GLITTER-homePage" translatesAutoresizingMaskIntoConstraints="NO" id="DIZ-g5-E3H">
+                                <rect key="frame" x="0.0" y="293" width="375" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5yL-fh-KXq">
+                                <rect key="frame" x="138" y="359" width="98" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Top Picks">
+                                        <attributes>
+                                            <color key="NSColor" red="0.34509803921568627" green="0.25490196078431371" blue="0.32549019607843138" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="25" name="Baskerville"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search Brand" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ybc-Sf-NL6">
+                                <rect key="frame" x="72" y="237" width="230" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="go"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vpR-ON-UG5">
+                                <rect key="frame" x="70" y="125" width="234" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Beauty Insider">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99215686274509807" green="0.88627450980392153" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="40" name="Baskerville"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xv9-CZ-Fua">
+                                <rect key="frame" x="310" y="244" width="22" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" backgroundImage="magnifyingglass" catalog="system"/>
+                                <connections>
+                                    <action selector="searchPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xVo-UM-jnS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.68627450980000004" green="0.5450980392" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.90000000000000002"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="QVH-cc-GwN"/>
+                    <connections>
+                        <outlet property="searchTextField" destination="Ybc-Sf-NL6" id="Kar-VS-NHa"/>
+                        <segue destination="R4X-j9-UaO" kind="show" identifier="brandTableView" id="0OY-9Q-gRQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1047.2" y="126.35467980295567"/>
+        </scene>
+        <!--Brand Table View Controller-->
+        <scene sceneID="jNo-C2-sz3">
+            <objects>
+                <viewController id="R4X-j9-UaO" customClass="BrandTableViewController" customModule="Beauty_Insider" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U9v-YX-Em4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KNR-YS-oN8">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="separatorColor" red="0.68627450980000004" green="0.5450980392" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="sectionIndexBackgroundColor" red="0.68627450980000004" green="0.5450980392" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BrandCell" rowHeight="500" id="lu3-uF-iGD" customClass="BrandCell" customModule="Beauty_Insider" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="500"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lu3-uF-iGD" id="fPG-W6-unL">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="500"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="evX-tU-mzh">
+                                                    <rect key="frame" x="61.000000000000014" y="150" width="252.33333333333337" height="200"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="200" id="bVR-I5-roi"/>
+                                                        <constraint firstAttribute="height" constant="200" id="iK1-bb-XNF"/>
+                                                        <constraint firstAttribute="width" secondItem="evX-tU-mzh" secondAttribute="height" multiplier="82:65" id="wrE-Q7-emQ"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gSu-TP-OCl">
+                                                    <rect key="frame" x="152" y="78" width="71.666666666666686" height="20.333333333333314"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="Label">
+                                                            <attributes>
+                                                                <color key="NSColor" red="1" green="0.71372549019999998" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="17" name="Baskerville"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.68627450980000004" green="0.5450980392" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="evX-tU-mzh" firstAttribute="centerY" secondItem="fPG-W6-unL" secondAttribute="centerY" id="SBX-9A-E89"/>
+                                                <constraint firstItem="gSu-TP-OCl" firstAttribute="top" secondItem="evX-tU-mzh" secondAttribute="bottom" constant="8" id="kBT-eI-dmI"/>
+                                                <constraint firstItem="evX-tU-mzh" firstAttribute="leading" secondItem="fPG-W6-unL" secondAttribute="leadingMargin" constant="46" id="nz9-lf-mV0"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="evX-tU-mzh" secondAttribute="trailing" constant="46.670000000000002" id="q2i-bK-MkO"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="brandImageView" destination="evX-tU-mzh" id="UJF-Li-0au"/>
+                                            <outlet property="brandTextView" destination="gSu-TP-OCl" id="emz-YM-1HV"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.68627450980000004" green="0.5450980392" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="OVf-Y0-s5E" firstAttribute="bottom" secondItem="KNR-YS-oN8" secondAttribute="bottom" id="9U3-M9-kFb"/>
+                            <constraint firstItem="KNR-YS-oN8" firstAttribute="leading" secondItem="OVf-Y0-s5E" secondAttribute="leading" id="LcW-f2-xwq"/>
+                            <constraint firstItem="OVf-Y0-s5E" firstAttribute="trailing" secondItem="KNR-YS-oN8" secondAttribute="trailing" id="m9b-4p-awZ"/>
+                            <constraint firstItem="KNR-YS-oN8" firstAttribute="top" secondItem="OVf-Y0-s5E" secondAttribute="top" id="pCS-qY-LvM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="OVf-Y0-s5E"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="c0e-GV-qWA"/>
+                    <connections>
+                        <outlet property="tableView" destination="KNR-YS-oN8" id="zoG-tp-1et"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lYV-Kz-RJ4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1926" y="126"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xkx-ZN-uvI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" hidesBarsOnTap="YES" id="lvh-J5-ffg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FPz-jr-YJo">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="2gh-n3-Oyg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gRa-0n-Qm2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="182" y="118"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="GLITTER-homePage" width="240" height="160"/>
+        <image name="MAKEUP-homePage" width="389" height="260"/>
+        <image name="SILK-homePage" width="208.66667175292969" height="139"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+    </resources>
 </document>
